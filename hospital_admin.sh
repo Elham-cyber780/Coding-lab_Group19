@@ -26,3 +26,4 @@ secure_data
 echo "System Environment Secured on $(date)"
 # Author: Elham-cyber780
 echo 'hospital_admin.sh execution complete'
+echo 'hospital_admin.sh execution complete'
