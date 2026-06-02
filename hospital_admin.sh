@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 initialize_system() {
     if [ ! -d "active_logs" ]; then
