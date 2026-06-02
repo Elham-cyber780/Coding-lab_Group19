@@ -1,4 +1,4 @@
-#!/bin/bash
+i#!/bin/bash
 
 initialize_system() {
     if [ ! -d "active_logs" ]; then
@@ -26,4 +26,4 @@ secure_data
 echo "System Environment Secured on $(date)"
 # Author: Elham-cyber780
 echo 'hospital_admin.sh execution complete'
-echo 'hospital_admin.sh execution complete'
+
