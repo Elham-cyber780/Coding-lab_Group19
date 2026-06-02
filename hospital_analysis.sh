@@ -7,5 +7,5 @@ process_vitals() {
         grep "CRITICAL" active_logs/heart_rate.log | awk '{print $1, $2, $3}' >> reports/critical_alerts.txt
 	# Temperature critical alerts
 	grep "CRITICAL" active_logs/temperature.log | awk '{print $1, $2, $3}' >> reports/critical_alerts.txt
-	# get the CRITICAL alerts using the grep command
+	# get the CRITICAL alerts using grep 
 }
