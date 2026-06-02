@@ -33,3 +33,5 @@ initialize_system() {
 
     echo "Initialization complete."
 }
+
+# Tested: Script successfully creates all 3 required directories
