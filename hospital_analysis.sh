@@ -1,5 +1,5 @@
 #!/bin/bash
-# Member 5 : Clinical Analyst
+# 1. Member 5 : Clinical Analyst
 process_vitals() {
 	#Ensure reports directory exists
 	[ ! -d reports ] && mkdir reports; > reports/critical_alerts.txt
@@ -10,7 +10,7 @@ process_vitals() {
 	# get the CRITICAL alerts using grep
        	# extract the Timestamp, Device_ID, and Value using awk
 }
-# Member 6 : Facility Auditor 
+# 2. Member 6 : Facility Auditor 
 water_audit() {
     awk '/ICU_WATER_RESERVE/ { sum += $4; count++ }
          END {
