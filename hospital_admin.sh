@@ -16,10 +16,54 @@ initialize_system() {
 }
 
 secure_data() {
-    chmod 600 active_logs
-    echo "Permissions set. Here are the current permissions:"
-    ls -l | grep active_logs
-}
+	echo "============================================"
+	echo "  KNH Hospital  Securing Data Directories"
+	 echo "============================================"
+
+	 TARGET_DIR="active_logs"
+	  if [ ! -d "$TARGET_DIR" ]; then
+		   echo "  [ERROR]  '$TARGET_DIR' folder not found."
+		   echo "           Please run initialize_system() first."
+		   exit 1
+	  fi
+
+	  echo "  [LOCK]   Locking '$TARGET_DIR'..."
+	   chmod 600 "$TARGET_DIR"
+	   echo "  [DONE]   Folder locked successfully."
+
+	   echo "  [VERIFY] Current permissions:"
+	   ls -ld "$TARGET_DIR"
+
+	   echo "  [LOCK]   Locking log files inside '$TARGET_DIR'..."
+	   chmod 600 "$TARGET_DIR"/*.log 2>/dev/null
+	   echo "  [DONE]   All log files locked."
+
+	   echo ""
+	    echo "  [STATUS] active_logs is now secure. Only owner can access it."
+	     echo "============================================"
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+										    
+
+
+
+
+
 
 initialize_system
 secure_data
