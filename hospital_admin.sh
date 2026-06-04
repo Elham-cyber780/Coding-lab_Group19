@@ -20,8 +20,9 @@ secure_data() {
     echo "Permissions set. Here are the current permissions:"
     ls -l
 }
-
+# call member 1's function
 initialize_system
+#call member 2's function
 secure_data
 echo "System Environment Secured on $(date)"
 # Author: Elham-cyber780
