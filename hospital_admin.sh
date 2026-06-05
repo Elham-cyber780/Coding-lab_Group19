@@ -28,7 +28,7 @@ secure_data() {
 	  fi
 
 	  echo "  [LOCK]   Locking '$TARGET_DIR'..."
-	   chmod 600 "$TARGET_DIR"
+	   chmod 700 "$TARGET_DIR"
 	   echo "  [DONE]   Folder locked successfully."
 
 	   echo "  [VERIFY] Current permissions:"
