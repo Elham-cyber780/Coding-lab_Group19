@@ -1,5 +1,5 @@
 #!/bin/bash
-#  Member 5 : Clinical Analyst
+#  Member5 : Clinical Analyst
 process_vitals() {
 	#Ensure reports directory exists
 	[ ! -d reports ] && mkdir reports
