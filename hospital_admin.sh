@@ -1,4 +1,4 @@
-i#!/bin/bash
+#!/bin/bash
 
 initialize_system() {
     if [ ! -d "active_logs" ]; then
@@ -16,7 +16,7 @@ initialize_system() {
 }
 
 secure_data() {
-    chmod 600 active_logs
+    chmod 700 active_logs
     echo "Permissions set. Here are the current permissions:"
     ls -l
 }
