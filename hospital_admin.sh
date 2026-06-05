@@ -20,6 +20,8 @@ secure_data() {
     echo "Permissions set. Current permissions:"
     ls -ld "$TARGET_DIR"
 }
+# call member 1 function
 initialize_system
+# call member 2 function
 secure_data
 echo "System Environment Secured on $(date)"
